@@ -1,0 +1,14 @@
+# Arquivos locais do sistema e do editor
+.DS_Store
+._*
+*.swp
+*.swo
+*~
+
+# Credenciais e configurações locais
+.env
+.env.*
+!.env.example
+
+# Logs temporários
+*.log

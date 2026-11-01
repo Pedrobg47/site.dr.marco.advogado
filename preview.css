@@ -1,0 +1,145 @@
+/* Estilos exclusivos da página interna de aprovação; não fazem parte do site. */
+.foundation {
+  padding-block: var(--space-6) var(--space-7);
+}
+
+.foundation__meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding-block-end: var(--space-5);
+  border-block-end: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: var(--text-small);
+}
+
+.foundation__intro {
+  --stack-space: var(--space-6);
+  padding-block: var(--section-space);
+}
+
+.foundation__intro h2 {
+  max-inline-size: 14ch;
+  font-size: var(--text-h1);
+}
+
+.foundation__intro .cluster {
+  margin-block-start: var(--space-7);
+}
+
+.foundation__notice {
+  max-inline-size: var(--reading-width);
+  padding-inline-start: var(--space-4);
+  border-inline-start: 2px solid var(--color-wood);
+  color: var(--color-muted);
+  font-size: var(--text-small);
+}
+
+.foundation__specimen {
+  --stack-space: var(--space-7);
+  padding: clamp(1.5rem, 0.7rem + 4vw, 5rem);
+}
+
+.foundation__specimen h2 {
+  font-size: clamp(2.625rem, 1.9rem + 4vw, 5.5rem);
+}
+
+.foundation__specimen-info {
+  display: grid;
+  gap: var(--space-5);
+  font-size: var(--text-small);
+}
+
+.foundation__sample-label {
+  font-size: var(--text-small);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.foundation__columns {
+  display: grid;
+  gap: var(--space-8);
+  padding-block: var(--section-space);
+}
+
+.foundation__columns h2 {
+  font-size: clamp(2.25rem, 1.75rem + 2vw, 3.25rem);
+}
+
+.foundation__palette {
+  margin-block-end: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.foundation__palette li {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-3);
+  min-block-size: 4.25rem;
+  padding-block: var(--space-3);
+  border-block-end: 1px solid var(--color-border);
+  font-size: 0.875rem;
+}
+
+.foundation__palette li > :last-child {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.foundation__palette li > * {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.foundation__palette small {
+  display: block;
+  color: var(--color-muted);
+  font-size: 0.75rem;
+}
+
+.foundation__swatch {
+  display: block;
+  inline-size: 2rem;
+  block-size: 2rem;
+  border: 1px solid #10111233;
+}
+
+.foundation__swatch--graphite { background: var(--color-graphite); }
+.foundation__swatch--champagne { background: var(--color-champagne); }
+.foundation__swatch--off-white { background: var(--color-off-white); }
+.foundation__swatch--wood { background: var(--color-wood); }
+.foundation__swatch--white { background: var(--color-white); }
+
+.foundation__note {
+  font-size: var(--text-small);
+}
+
+.foundation__interaction {
+  padding-block: var(--space-7) var(--space-8);
+  border-block-start: 1px solid var(--color-border);
+}
+
+.foundation__closing {
+  padding-block-start: var(--space-5);
+  border-block-start: 1px solid var(--color-border);
+  font-size: var(--text-small);
+}
+
+@media (min-width: 48rem) {
+  .foundation__meta {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .foundation__specimen-info {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  .foundation__columns {
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(3rem, 5vw, 6rem);
+  }
+}
